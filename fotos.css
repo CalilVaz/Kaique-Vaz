@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 29;
+  /* HSL color mode */
+  --base-color: #BF1414;
+  --base-color-second: #BF1414;
+  --base-color-alt: #dd1414;
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+  /* Fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM sans', sans-serif;
+}
+
+/*----------------------------------------*/
+
+
+/*----------------------------------------*/
+
+body{
+  background: var(--body-color);
+  background: linear-gradient(0deg, rgba(198,198,198,1) 0%, rgba(255,255,255,1) 100%);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#container-grid{
+  -webkit-column-count: 3;
+  column-count: 3;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.foto{
+  width: 100%;
+}
+
+main{
+  width: 90vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#container-grid {
+  margin-top: 1rem;
+}
+
+@media (min-width: 711px) and (max-width: 840px){
+  #container-grid{
+      -webkit-column-count: 2;
+      column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  #container-grid {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 711px){
+  #container-grid{
+      -webkit-column-count: 1;
+      column-count: 1;
+}
+}
